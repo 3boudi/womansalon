@@ -4,6 +4,7 @@
 
 /* --- Google Fonts Integration --- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* --- CSS Variables / Tokens --- */
 :root {
@@ -19,6 +20,8 @@
     
     --font-heading: 'Playfair Display', Georgia, serif;
     --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-heading-ar: 'Amiri', 'Playfair Display', serif;
+    --font-body-ar: 'Cairo', 'Inter', sans-serif;
     
     --transition-slow: 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --transition-medium: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -35,6 +38,7 @@
 html {
     scroll-behavior: smooth;
     text-size-adjust: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -274,6 +278,21 @@ h1, h2, h3, h4, h5, h6 {
 .btn-link:hover {
     border-color: var(--accent);
     color: var(--accent);
+}
+
+/* Button wrapper layouts (base / desktop) */
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 /* --- Sticky Navigation --- */
@@ -1045,6 +1064,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+    .faq-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
     .faq-question {
         font-size: 1.25rem;
     }
@@ -1151,6 +1175,11 @@ textarea.input-field {
 }
 
 @media (max-width: 768px) {
+    .contact-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
     .form-row {
         grid-template-columns: 1fr;
         gap: 2.5rem;
@@ -1506,5 +1535,170 @@ textarea.input-field {
         justify-content: center;
         padding: 0.8rem 1rem;
         font-size: 0.7rem;
+    }
+}
+
+/* ==========================================================================
+   Language Switcher UI
+   ========================================================================== */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-right: 1rem;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid var(--border-color-strong);
+    color: var(--muted-fg);
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-transform: uppercase;
+}
+
+.lang-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.lang-btn.active {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-fg);
+}
+
+.mobile-lang-switcher {
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+
+.mobile-lang-switcher .lang-btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+}
+
+@media (max-width: 768px) {
+    .header .lang-switcher:not(.mobile-lang-switcher) {
+        display: none;
+    }
+}
+
+/* ==========================================================================
+   RTL / Arabic Language Support
+   ========================================================================== */
+.lang-ar {
+    font-family: var(--font-body-ar);
+    line-height: 1.9;
+}
+
+.lang-ar h1, .lang-ar h2, .lang-ar h3, .lang-ar h4,
+.lang-ar .hero-title, .lang-ar .contact-title,
+.lang-ar .services-header-title, .lang-ar .testimonials-title {
+    font-family: var(--font-heading-ar);
+}
+
+.lang-ar .overline-label {
+    letter-spacing: 0.05em;
+}
+
+.lang-ar .btn {
+    letter-spacing: 0;
+}
+
+.lang-ar .nav-link, .lang-ar .mobile-nav-link {
+    letter-spacing: 0;
+    font-family: var(--font-body-ar);
+    font-weight: 500;
+}
+
+.lang-ar .hero-desc,
+.lang-ar .service-desc,
+.lang-ar .faq-answer-content,
+.lang-ar .testimonial-text,
+.lang-ar .footer-brand-desc,
+.lang-ar p {
+    font-family: var(--font-body-ar);
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.lang-ar .logo, .lang-ar .footer-logo {
+    font-family: var(--font-heading-ar);
+}
+
+.lang-ar .stat-number {
+    font-family: var(--font-heading-ar);
+}
+
+/* Disable drop-cap for Arabic — connected script breaks when first-letter is floated */
+.lang-ar .drop-cap::first-letter {
+    float: none;
+    font-size: inherit;
+    line-height: inherit;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+/* RTL-specific layout mirroring */
+[dir="rtl"] .vertical-label {
+    left: auto;
+    right: -2rem;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+[dir="rtl"] .hero {
+    direction: rtl;
+}
+
+[dir="rtl"] .service-details-list li {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .faq-question {
+    text-align: right;
+}
+
+[dir="rtl"] .faq-toggle-icon {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] .contact-detail-item {
+    text-align: right;
+}
+
+[dir="rtl"] .footer-hours-grid div {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .header-nav {
+    direction: rtl;
+}
+
+[dir="rtl"] .nav-actions {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .lang-switcher {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+[dir="rtl"] .floating-whatsapp {
+    right: auto;
+    left: 2rem;
+}
+
+@media (max-width: 480px) {
+    [dir="rtl"] .floating-whatsapp {
+        right: 1.25rem;
+        left: 1.25rem;
     }
 }
