@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison de Beauté — Luxury Editorial Beauty Salon</title>
+    <meta name="description" content="An exquisite sanctuary for beauty and wellness. Experience tailored hairstyling, premium skincare, and professional makeup artistry in an architectural, serene space.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Tactile Paper Noise Background Overlay -->
+    <div class="paper-noise"></div>
+
+    <!-- 4 Architectural Vertical Gridlines -->
+    <div class="grid-lines">
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileDrawer">
+        <ul class="mobile-nav-menu">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#philosophy" class="mobile-nav-link">Philosophy</a></li>
+            <li><a href="#services" class="mobile-nav-link">Services</a></li>
+            <li><a href="#atelier" class="mobile-nav-link">The Atelier</a></li>
+            <li><a href="#testimonials" class="mobile-nav-link">Journal</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <a href="https://wa.me/213782549229?text=Hello%20Maison%20de%20Beaut%C3%A9%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="btn btn-primary">
+            <span class="btn-overlay"></span>
+            <span class="btn-text">Book on WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container header-nav">
+            <a href="#home" class="logo">MAISON <span class="italic-accent" style="font-size: 1.35rem;">de</span> BEAUTÉ</a>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#atelier" class="nav-link">Atelier</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/213782549229?text=Hello%20Maison%20de%20Beaut%C3%A9%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="btn btn-primary">
+                    <span class="btn-overlay"></span>
+                    <span class="btn-text">Book Appointment</span>
+                </a>
+                
+                <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="container hero py-section">
+            <div class="hero-content reveal">
+                <div class="overline-label hero-subtitle">Maison de Beauté / Atelier</div>
+                <h1 class="hero-title">
+                    Curated <span class="italic-accent">*Excellence*</span><br>
+                    For The <span class="italic-accent">*Modern*</span> Soul.
+                </h1>
+                <p class="hero-desc">
+                    A serene sanctuary crafted for those who value understated elegance. We refine beauty through architectural precision, slow care rituals, and high-end botanical formulations.
+                </p>
+                <div style="display: flex; gap: 1.5rem; align-items: center; margin-top: 1rem;">
+                    <a href="#contact" class="btn btn-primary">
+                        <span class="btn-overlay"></span>
+                        <span class="btn-text">Reserve Session</span>
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        Explore Services
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image-side reveal reveal-delay-1">
+                <div class="vertical-label">EDITORIAL / VOL. 01</div>
+                <div class="image-wrapper" style="width: 100%; height: 100%;">
+                    <img src="assets/hero_beauty.png" alt="Editorial beauty portrait showing soft warm light and natural styling" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section id="philosophy" class="container py-section">
+            <div class="philosophy-grid">
+                <div class="philosophy-info reveal">
+                    <div class="overline-label" style="margin-bottom: 2rem;">Philosophy</div>
+                    <h2 class="drop-cap" style="font-size: 2.25rem; font-family: var(--font-heading); margin-bottom: 2rem; line-height: 1.3;">
+                        We believe that luxury lies in the <span class="italic-accent">details</span>. It is not about adding decoration, but perfecting the essentials that define you.
+                    </h2>
+                    <p style="color: var(--muted-fg); margin-bottom: 2rem; max-w-xl;">
+                        Every haircut, skincare therapy, and makeup detail we design is treated as a piece of architectural art. We respect the natural canvas, using nourishing organic essences and modern styling methodologies to bring forth a clean, quiet luxury.
+                    </p>
+                    <a href="#contact" class="btn btn-link">Learn about our bespoke rituals</a>
+                </div>
+                
+                <div class="philosophy-image-container reveal reveal-delay-2">
+                    <div class="vertical-label">THE ATELIER EXPERIENCE</div>
+                    <div class="image-wrapper" style="width: 100%; height: 100%;">
+                        <img src="assets/salon_interior.png" alt="Clean architectural styling interior of Maison de Beauté salon" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="container py-section" style="border-top: 1px solid var(--border-color);">
+            <div class="services-header reveal">
+                <h2 class="services-header-title">Our <span class="italic-accent">Bespoke</span> Rituals</h2>
+                <p class="services-header-desc">A tailored menu of specialized beauty treatments designed around organic curation and structural precision.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Hair Service Card -->
+                <div class="service-card reveal">
+                    <div class="service-img-wrapper image-wrapper">
+                        <img src="assets/service_hair.png" alt="Luxurious hair care styling session at the salon" loading="lazy">
+                    </div>
+                    <div class="service-meta">
+                        <h3 class="service-name">Hairstyling</h3>
+                        <span class="service-price">From $95</span>
+                    </div>
+                    <p class="service-desc">Precision cuts, dimensional luxury coloring, and deep reconstruction treatments that respect hair integrity.</p>
+                    <ul class="service-details-list">
+                        <li><span>Editorial Haircut & Blowout</span> <span>$95</span></li>
+                        <li><span>Balayage & Dimensional Color</span> <span>$180</span></li>
+                        <li><span>Organic Keratin Treatment</span> <span>$220</span></li>
+                    </ul>
+                </div>
+
+                <!-- Skincare Service Card -->
+                <div class="service-card highlighted reveal reveal-delay-1">
+                    <div class="service-img-wrapper image-wrapper">
+                        <img src="assets/service_skin.png" alt="Quiet calm spa skincare treatment ritual" loading="lazy">
+                    </div>
+                    <div class="service-meta">
+                        <h3 class="service-name">Skincare</h3>
+                        <span class="service-price">From $120</span>
+                    </div>
+                    <p class="service-desc">Immersive facial treatments combining manual lymphatic drainage, clean cosmetics, and advanced microcurrents.</p>
+                    <ul class="service-details-list">
+                        <li><span>Atelier Signature Facial (75 mins)</span> <span>$120</span></li>
+                        <li><span>Sculpting Lymphatic Therapy</span> <span>$140</span></li>
+                        <li><span>Oxygen Infusion Radiance Ritual</span> <span>$165</span></li>
+                    </ul>
+                </div>
+
+                <!-- Makeup Service Card -->
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-img-wrapper image-wrapper">
+                        <img src="assets/service_makeup.png" alt="Sophisticated detail of luxury cosmetic application tools" loading="lazy">
+                    </div>
+                    <div class="service-meta">
+                        <h3 class="service-name">Makeup Artistry</h3>
+                        <span class="service-price">From $110</span>
+                    </div>
+                    <p class="service-desc">Clean-beauty applications focusing on radiant skin finish, graphic alignments, and editorial portrait formatting.</p>
+                    <ul class="service-details-list">
+                        <li><span>Minimalist Editorial Makeup</span> <span>$110</span></li>
+                        <li><span>Bridal Consultation & Artistry</span> <span>$250</span></li>
+                        <li><span>Private Makeup Masterclass</span> <span>$180</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: center; margin-top: 5rem;" class="reveal">
+                <a href="#contact" class="btn btn-primary">
+                    <span class="btn-overlay"></span>
+                    <span class="btn-text">Book Your Ritual</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- The Atelier Space Showcase -->
+        <section id="atelier" class="atelier py-section">
+            <div class="container atelier-grid">
+                <div class="atelier-content reveal">
+                    <div class="overline-label">The Space</div>
+                    <h2 style="font-size: 2.5rem; line-height: 1.2;">
+                        A Sanctuary of <span class="italic-accent">Quiet Luxury</span>
+                    </h2>
+                    <p style="color: var(--muted-fg); font-size: 0.9375rem;">
+                        Designed by award-winning architects, our space features neutral travertine stone, raw linen draperies, and natural sunwells. It is an acoustic haven created to silence the city's noise, offering you pure architectural tranquility while we focus on your care.
+                    </p>
+                    
+                    <div class="atelier-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">12</span>
+                            <span class="stat-label">Expert Stylists</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Organic Products</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1-on-1</span>
+                            <span class="stat-label">Dedicated Care</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atelier-image-wrapper image-wrapper reveal reveal-delay-1">
+                    <img src="assets/salon_interior.png" alt="Travertine tables and linen decor in Maison de Beauté interior salon" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials (Journal / Reviews) -->
+        <section id="testimonials" class="container py-section">
+            <h2 class="testimonials-title reveal">The Atelier <span class="italic-accent">Journal</span></h2>
+
+            <div class="testimonials-grid">
+                <!-- Review 1 -->
+                <div class="testimonial-card reveal">
+                    <div class="rating-stars">
+                        <!-- Star SVG -->
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    </div>
+                    <blockquote class="testimonial-text">
+                        "The atmosphere here is pure tranquility. From the soft linen textures to the meticulous care during my color treatment, the entire experience felt completely custom and incredibly relaxing. My hair has never felt healthier."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="assets/hero_beauty.png" alt="Portrait review of a woman with beautiful styled hair" loading="lazy">
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Charlotte Dubois</span>
+                            <span class="author-role">Art Director</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="testimonial-card reveal reveal-delay-1">
+                    <div class="rating-stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    </div>
+                    <blockquote class="testimonial-text">
+                        "Maison de Beauté is my ultimate escape. The signature facial is more than a treatment; it is a ritual of pure rejuvenation. Their organic formulations left my skin radiant and healthy. An absolute masterpiece of service."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="assets/hero_beauty.png" alt="Portrait review of a woman with healthy radiant skin" loading="lazy">
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Helena Rostova</span>
+                            <span class="author-role">Classical Pianist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="container py-section" style="border-top: 1px solid var(--border-color);">
+            <div class="faq-grid">
+                <div class="faq-intro reveal">
+                    <div class="overline-label">F.A.Q.</div>
+                    <h2 style="font-size: 2.25rem; line-height: 1.2;">
+                        The <span class="italic-accent">Details</span>
+                    </h2>
+                    <p style="color: var(--muted-fg); font-size: 0.9375rem;">
+                        Everything you need to know about preparing for your visit to the Atelier.
+                    </p>
+                </div>
+                
+                <ul class="faq-list reveal reveal-delay-1">
+                    <li class="faq-item">
+                        <button class="faq-question">
+                            <span>How do I book an appointment?</span>
+                            <span class="faq-toggle-icon"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                You can book directly using our website contact form, which pre-fills a booking text on WhatsApp. Alternatively, you can click any of our WhatsApp buttons or call us directly.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question">
+                            <span>What products do you use?</span>
+                            <span class="faq-toggle-icon"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                We partner exclusively with certified organic, biodynamic skin and haircare brands. Our products are free of parabens, synthetic sulfates, and chemical fragrances to ensure clean, natural health.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question">
+                            <span>What is your cancellation policy?</span>
+                            <span class="faq-toggle-icon"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                We value our stylists' dedicated one-on-one time. We kindly request cancellations or rescheduling adjustments be made at least 24 hours prior to your scheduled session.
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Booking / Contact Form Section -->
+        <section id="contact" class="container py-section contact-section">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h2 class="contact-title">Begin Your <br><span class="italic-accent">Transformation</span></h2>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <span>Atelier Location</span>
+                            <span>18 Rue Didouche Mourad, Algiers, Algeria</span>
+                        </div>
+                        <div class="contact-detail-item">
+                            <span>Contact Direct</span>
+                            <span><a href="https://wa.me/213782549229">+213 782 549 229</a></span>
+                        </div>
+                        <div class="contact-detail-item">
+                            <span>Email Inquiries</span>
+                            <span><a href="mailto:contact@maisondebeaute.com">atelier@maisondebeaute.com</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container reveal reveal-delay-1" style="display: flex; flex-direction: column; justify-content: center; gap: 2rem;">
+                    <p style="color: var(--muted-fg); font-size: 1.125rem; max-width: 32rem; margin-bottom: 0.5rem;">
+                        Our booking process is direct and personal. Choose to chat with our automated booking assistant on WhatsApp, or call our Atelier directly to speak with an assistant.
+                    </p>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                        <a href="https://wa.me/213782549229?text=Hello%20Maison%20de%20Beaut%C3%A9%2C%20I%20would%20like%20to%20start%20booking%20with%20your%20assistant." target="_blank" class="btn btn-primary">
+                            <span class="btn-overlay"></span>
+                            <span class="btn-text">Book via WhatsApp Chatbot</span>
+                        </a>
+                        <a href="tel:+213782549229" class="btn btn-secondary">
+                            Call Atelier
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">MAISON <span class="italic-accent" style="font-size: 1.7rem; color: var(--accent);">de</span> BEAUTÉ</a>
+                <p class="footer-brand-desc">
+                    An editorial sanctuary focused on architectural beauty, curated organic wellness, and high-contrast personal elegance.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="footer-title">Explore</h4>
+                <ul class="footer-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#philosophy">Philosophy</a></li>
+                    <li><a href="#services">Bespoke Rituals</a></li>
+                    <li><a href="#atelier">The Atelier Space</a></li>
+                    <li><a href="#testimonials">Client Journal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-hours">
+                <h4 class="footer-title">Atelier Hours</h4>
+                <div class="footer-hours-grid">
+                    <div><span>Monday — Friday</span> <span>09:00 - 20:00</span></div>
+                    <div><span>Saturday</span> <span>10:00 - 18:00</span></div>
+                    <div><span>Sunday</span> <span>Closed (By Appointment Only)</span></div>
+                </div>
+            </div>
+
+            <div class="footer-social-section">
+                <h4 class="footer-title">Connect</h4>
+                <div class="social-icons">
+                    <!-- WhatsApp (Primary Contact +213782549229) -->
+                    <a href="https://wa.me/213782549229?text=Hello%20Maison%20de%20Beaut%C3%A9%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" class="social-icon-link" aria-label="WhatsApp Official Link">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.37 5.378 0 12.01 0a11.948 11.948 0 0 1 8.49 3.518 11.957 11.957 0 0 1 3.5 8.49c-.003 6.643-5.378 12.013-12.01 12.013-1.997-.001-3.957-.496-5.71-1.442L0 24zm6.59-4.846c1.62.96 3.21 1.468 4.93 1.47 5.275 0 9.56-4.287 9.563-9.563A9.5 9.5 0 0 0 18.3 4.316a9.513 9.513 0 0 0-6.756-2.793c-5.278 0-9.564 4.29-9.566 9.564-.001 1.795.488 3.55 1.414 5.097l-.988 3.6 3.692-.969zm11.332-6.52c-.3-.15-1.771-.875-2.046-.975-.276-.1-.477-.15-.677.15-.2.3-.775.975-.95 1.175-.175.2-.35.225-.65.075-1.04-.531-1.823-1.01-2.546-2.254-.192-.33-.06-.51.083-.69.13-.157.3-.35.45-.525.15-.175.2-.3.3-.5s.05-.375-.025-.525c-.075-.15-.676-1.628-.926-2.228-.243-.585-.49-.504-.677-.513-.175-.008-.375-.01-.575-.01a1.1 1.1 0 0 0-.798.375c-.276.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.11 3.224 5.112 4.521.714.309 1.272.493 1.707.631.715.227 1.365.195 1.88.118.572-.085 1.771-.725 2.02-.1.25-.675.25-1.25.175-1.35-.074-.1-.275-.15-.575-.3z"/>
+                        </svg>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://instagram.com" target="_blank" class="social-icon-link" aria-label="Instagram Official Link">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                        </svg>
+                    </a>
+                    <!-- Facebook -->
+                    <a href="https://facebook.com" target="_blank" class="social-icon-link" aria-label="Facebook Official Link">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <!-- Pinterest -->
+                    <a href="https://pinterest.com" target="_blank" class="social-icon-link" aria-label="Pinterest Official Link">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.906 2.17-2.906 1.024 0 1.517.769 1.517 1.689 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.868-2.061-4.869-5.007-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.166-1.495-.694-2.433-2.878-2.433-4.629 0-3.766 2.737-7.229 7.892-7.229 4.15 0 7.372 2.957 7.372 6.906 0 4.125-2.597 7.444-6.208 7.444-1.213 0-2.354-.63-2.744-1.372l-.747 2.84c-.27 1.042-1.002 2.35-1.494 3.146 1.119.347 2.307.537 3.54.537 6.63 0 12-5.373 12-11.996C24.005 5.362 18.636 0 12.017 0z"/>
+                        </svg>
+                    </a>
+                    <!-- TikTok -->
+                    <a href="https://tiktok.com" target="_blank" class="social-icon-link" aria-label="TikTok Official Link">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.61 4.17.94.98 2.21 1.62 3.57 1.83v3.91c-1.31-.08-2.59-.51-3.69-1.22-.61-.39-1.14-.9-1.57-1.49-.01 2.91-.01 5.81-.02 8.72-.07 2.16-.76 4.31-2.09 6.03-1.63 2.11-4.23 3.42-6.86 3.49-2.55.07-5.11-.96-6.79-2.91C-.26 19.4-.41 16.03.88 13.68c1.17-2.14 3.49-3.64 5.92-3.76.22-.01.44-.01.66.01v4.06c-1.03.06-2.06.49-2.79 1.25-.92.95-1.22 2.4-1.01 3.68.27 1.67 1.76 2.95 3.46 2.91 1.75-.02 3.23-1.36 3.4-3.08.06-1.56.03-3.12.04-4.68-.01-5.88-.01-11.75-.07-17.63z"/>
+                        </svg>
+                    </a>
+                    <!-- YouTube -->
+                    <a href="https://youtube.com" target="_blank" class="social-icon-link" aria-label="YouTube Official Link">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.871.508 9.388.508 9.388.508s7.517 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <div>&copy; 2026 Maison de Beauté. All Rights Reserved.</div>
+            <div class="footer-bottom-links">
+                <a href="#home">Privacy Policy</a>
+                <a href="#home">Terms of Service</a>
+                <a href="#home">Site Credits</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Booking Action (Appears on Scroll) -->
+    <a href="https://wa.me/213782549228?text=Hello%20Maison%20de%20Beaut%C3%A9%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="floating-whatsapp" id="floatingWhatsapp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.37 5.378 0 12.01 0a11.948 11.948 0 0 1 8.49 3.518 11.957 11.957 0 0 1 3.5 8.49c-.003 6.643-5.378 12.013-12.01 12.013-1.997-.001-3.957-.496-5.71-1.442L0 24zm6.59-4.846c1.62.96 3.21 1.468 4.93 1.47 5.275 0 9.56-4.287 9.563-9.563A9.5 9.5 0 0 0 18.3 4.316a9.513 9.513 0 0 0-6.756-2.793c-5.278 0-9.564 4.29-9.566 9.564-.001 1.795.488 3.55 1.414 5.097l-.988 3.6 3.692-.969zm11.332-6.52c-.3-.15-1.771-.875-2.046-.975-.276-.1-.477-.15-.677.15-.2.3-.775.975-.95 1.175-.175.2-.35.225-.65.075-1.04-.531-1.823-1.01-2.546-2.254-.192-.33-.06-.51.083-.69.13-.157.3-.35.45-.525.15-.175.2-.3.3-.5s.05-.375-.025-.525c-.075-.15-.676-1.628-.926-2.228-.243-.585-.49-.504-.677-.513-.175-.008-.375-.01-.575-.01a1.1 1.1 0 0 0-.798.375c-.276.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.11 3.224 5.112 4.521.714.309 1.272.493 1.707.631.715.227 1.365.195 1.88.118.572-.085 1.771-.725 2.02-.1.25-.675.25-1.25.175-1.35-.074-.1-.275-.15-.575-.3z"/>
+        </svg>
+        <span>حجز سريع / BOOK NOW</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
